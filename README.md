@@ -6,7 +6,9 @@ Ejemplos de mapas con distintas librerías y lenguajes de programación
 <ul>
   <li><a href="https://github.com/marceloprates/prettymaps" target="_blank" rel='noreferrer noopener'>prettymaps</a></li>
   <br><br>
-  <img src="output/cdmx-circle.png" alt="prettymaps-example" width="800" height="800" />
+  <img src="ejemplos/cdmx-square.png" alt="prettymaps-example" width="800" height="800" />
+  <br>
+  <img src="ejemplos/cdmx-circle.png" alt="prettymaps-example" width="800" height="800" />
   <br><br>
   <li><a href="https://github.com/python-visualization/folium" target="_blank" rel='noreferrer noopener'>folium</a></li>
 </ul>
