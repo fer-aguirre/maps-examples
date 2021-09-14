@@ -1,0 +1,3 @@
+[submodule "prettymaps"]
+	path = prettymaps
+	url = git@github.com:marceloprates/prettymaps.git
