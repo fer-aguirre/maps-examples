@@ -148,7 +148,6 @@ ax.text(
     fontproperties = fm.FontProperties(fname = 'fonts/HashedBrowns-WyJgn.ttf', size = 40),
 ),
 
-plt.savefig('prints/cdmx-circle2.png')
-#plt.savefig('prints/cdmx-circle.svg')
+plt.savefig('output/cdmx-circle2.png')
 
 ###############################################################################

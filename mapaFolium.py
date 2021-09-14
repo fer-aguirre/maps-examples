@@ -26,4 +26,4 @@ tooltip = "Click me!"
 
 folium.Marker([19.435814905084374, -99.13233435292825], popup="<i>Librería Nely</i>", tooltip=tooltip).add_to(m)
 folium.Marker([19.4358958446759, -99.13158333443202], popup="<b>Librería Porrúa</b>", tooltip=tooltip).add_to(m)
-m.save("index.html")
+m.save("output/index.html")
