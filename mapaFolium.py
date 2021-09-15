@@ -10,7 +10,7 @@ m = folium.Map(location=[19.43274052957381, -99.133221555212], zoom_start=16, ti
 # Add new layer
 folium.TileLayer(tiles='Stamen Toner Labels').add_to(m)
 # Custom icon image
-icon_image = "icons/tree.png"
+icon_image = "assets/icons/tree.png"
 icon = folium.features.CustomIcon(
     icon_image,
     icon_size=(50, 50),
@@ -42,7 +42,7 @@ folium.Marker([19.436423469877685, -99.10921966656204], icon=icon, popup="<b>Par
 
 
 # Save as 'html'
-m.save("ejemplos/index.html")
+m.save("ejemplos/leaflet-python.html")
 # Save as 'png'
 img_data = m._to_png(5)
 img = Image.open(io.BytesIO(img_data))

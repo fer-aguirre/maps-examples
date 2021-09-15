@@ -60,14 +60,14 @@ dx, dy = xmax-xmin, ymax-ymin
 ax.set_xlim(xmin-.06*dx, xmax+.06*dx)
 ax.set_ylim(ymin-.06*dy, ymax+.06*dy)
 
-# Draw top text
+# Draw right text
 ax.text(
     #xmin-.05*dx, ymin-.06*dy,
     xmin+1.02*dx, ymin+.26*dy,
     'Kiosco Morisco, CDMX, México',
     color = '#2F3737',
     rotation = 270,
-    fontproperties = fm.FontProperties(fname = 'fonts/HashedBrowns-WyJgn.ttf', size = 40)
+    fontproperties = fm.FontProperties(fname = 'assets/fonts/HashedBrowns-WyJgn.ttf', size = 40)
 )
 
 plt.savefig('ejemplos/kiosco-morisco.png')
@@ -133,7 +133,7 @@ ax.text(
     xmax-.25*dx, ymax-.05*dy,
     'Zócalo,\nCDMX, México',
     color = '#2F3737',
-    fontproperties = fm.FontProperties(fname = 'fonts/HashedBrowns-WyJgn.ttf', size = 40)
+    fontproperties = fm.FontProperties(fname = 'assets/fonts/HashedBrowns-WyJgn.ttf', size = 40)
 )
 
 
@@ -201,7 +201,7 @@ ax.text(
     'Bosque de Chapultepec,\nCDMX, México',
     color = '#2F3737',
     rotation = 90,
-    fontproperties = fm.FontProperties(fname = 'fonts/HashedBrowns-WyJgn.ttf', size = 40)
+    fontproperties = fm.FontProperties(fname = 'assets/fonts/HashedBrowns-WyJgn.ttf', size = 40)
 )
 
 plt.savefig('ejemplos/bosque-chapultepec.png')
