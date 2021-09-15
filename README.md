@@ -5,9 +5,79 @@ Ejemplos de mapas con distintas librerías y lenguajes de programación
 
   * ### [prettymaps](https://github.com/marceloprates/prettymaps)
 
-  #### Ejemplo de uso
+  ### Ejemplo de uso (Aquí más [ejemplos](https://github.com/fer-aguirre/mapas/blob/master/mapaPrettymaps.py))
+ 
+  ```python
+ from prettymaps import *
+ import matplotlib.font_manager as fm
+ from matplotlib import pyplot as plt
 
+ # CIRCLE PLOT
+ # Setup figure
+ fig, ax = plt.subplots(figsize = (12, 12), constrained_layout = True)
+
+ layers = plot(
+     'CDMX, México', radius = 1100,
+
+     ax = ax,
+
+     layers = {
+             'perimeter': {},
+             'streets': {
+                 'custom_filter': '["highway"~"motorway|trunk|primary|secondary|tertiary|residential|service|unclassified|pedestrian|footway"]',
+                 'width': {
+                     'motorway': 5,
+                     'trunk': 5,
+                     'primary': 4.5,
+                     'secondary': 4,
+                     'tertiary': 3.5,
+                     'residential': 3,
+                     'service': 2,
+                     'unclassified': 2,
+                     'pedestrian': 2,
+                     'footway': 1,
+                 }
+             },
+             'building': {'tags': {'building': True, 'landuse': 'construction'}, 'union': False},
+             'water': {'tags': {'natural': ['water', 'bay']}},
+             'green': {'tags': {'landuse': 'grass', 'natural': ['island', 'wood'], 'leisure': 'park'}},
+             'forest': {'tags': {'landuse': 'forest'}},
+             'parking': {'tags': {'amenity': 'parking', 'highway': 'pedestrian', 'man_made': 'pier'}}
+         },
+         drawing_kwargs = {
+             'background': {'fc': '#CCD8F6', 'ec': '#dadbc1', 'hatch': 'ooo...', 'zorder': -1},
+             'perimeter': {'fc': '#CCD8F6', 'ec': '#dadbc1', 'lw': 0, 'hatch': 'ooo...',  'zorder': 0},
+             'green': {'fc': '#D0F1BF', 'ec': '#2F3737', 'lw': 1, 'zorder': 1},
+             'forest': {'fc': '#64B96A', 'ec': '#2F3737', 'lw': 1, 'zorder': 1},
+             'water': {'fc': '#a1e3ff', 'ec': '#2F3737', 'hatch': 'ooo...', 'hatch_c': '#85c9e6', 'lw': 1, 'zorder': 2},
+             'parking': {'fc': '#F1E4FF', 'ec': '#003939', 'lw': 1, 'zorder': 3},
+             'streets': {'fc': '#570257', 'ec': '#0F6166', 'alpha': 1, 'lw': 0, 'zorder': 3},
+             'building': {'palette': ['#460379', '#FF5E5B', '#FFE290'], 'ec': '#050030', 'lw': .5, 'zorder': 4},
+         },
+
+         osm_credit = {'color': '#2F3737'}
+ )
+
+ # Set bounds
+ xmin, ymin, xmax, ymax = layers['perimeter'].bounds
+ dx, dy = xmax-xmin, ymax-ymin
+ ax.set_xlim(xmin-.06*dx, xmax+.06*dx)
+ ax.set_ylim(ymin-.06*dy, ymax+.06*dy)
+
+
+ # Draw top text
+ ax.text(
+     xmax-.25*dx, ymax-.05*dy,
+     'Zócalo,\nCDMX, México',
+     color = '#2F3737',
+     fontproperties = fm.FontProperties(fname = 'assets/fonts/HashedBrowns-WyJgn.ttf', size = 40)
+ )
+```
+ 
   ![Zocalo](https://github.com/fer-aguirre/mapas/blob/master/ejemplos/zocalo.png)
+  
+  ### Galería:
+  
   ![Bosque de Chapultepec](https://github.com/fer-aguirre/mapas/blob/master/ejemplos/bosque-chapultepec.png)
   ![Kiosco Morisco](https://github.com/fer-aguirre/mapas/blob/master/ejemplos/kiosco-morisco.png)
 
