@@ -2,7 +2,7 @@ __pycache__
 *.pyc
 env*
 cache
-.Rhistory
+.R*
 geckodriver.log
-ejemplos/leaflet*
+ejemplos/*.html
 test.py
