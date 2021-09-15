@@ -3,9 +3,7 @@ Ejemplos de mapas con distintas librerías y lenguajes de programación
 
 ## Mapas en Python
 
-  * ### [prettymaps](https://github.com/marceloprates/prettymaps)
-
-  ### Ejemplo de uso (Aquí más [ejemplos](https://github.com/fer-aguirre/mapas/blob/master/mapaPrettymaps.py))
+  * ### Ejemplo de [prettymaps](https://github.com/marceloprates/prettymaps) (Aquí más [ejemplos](https://github.com/fer-aguirre/mapas/blob/master/mapaPrettymaps.py))
  
   ```python
  from prettymaps import *
@@ -82,9 +80,7 @@ Ejemplos de mapas con distintas librerías y lenguajes de programación
   ![Kiosco Morisco](https://github.com/fer-aguirre/mapas/blob/master/ejemplos/kiosco-morisco.png)
 
 
-  * ### [folium](https://github.com/python-visualization/folium)
-
- ### Ejemplo de uso (Aquí más [ejemplos](https://github.com/fer-aguirre/mapas/blob/master/mapaFolium.py))
+ * ### Ejemplo de [folium](https://github.com/python-visualization/folium) (Aquí más [ejemplos](https://github.com/fer-aguirre/mapas/blob/master/mapaFolium.py))
 
 ```python
 import folium
@@ -101,17 +97,13 @@ icon = CustomIcon(
     icon_anchor=(20, 10),
     popup_anchor=(-3, -76),
 )
-
+# Custom tooltip message
 tooltip = "¡Haz click!"
-
+# Add markers
 folium.Marker([19.435011442107704, -99.13265026035839], icon=icon, popup="<b>Parque República de Guatemala</b>", tooltip=tooltip).add_to(m)
-
 folium.Marker([19.42982058040328, -99.13279050032122], icon=icon, popup="<b>Parque Francisco Primo De Verdad Y Ramos</b>", tooltip=tooltip).add_to(m)
-
 folium.Marker([19.43640005202161, -99.14397464702137], icon=icon, popup="<b>Alameda Central</b>", tooltip=tooltip).add_to(m)
-
 folium.Marker([19.433655882695284, -99.14372922687433], icon=icon, popup="<b>Parque Santos Degollado</b>", tooltip=tooltip).add_to(m)
-
 folium.Marker([19.426977108120735, -99.14572764812497], icon=icon, popup="<b>Parque Pujibet</b>", tooltip=tooltip).add_to(m)
 ```
 
@@ -120,9 +112,7 @@ folium.Marker([19.426977108120735, -99.14572764812497], icon=icon, popup="<b>Par
 
 ## Mapas en R
 
-  * ### [leaflet](https://github.com/rstudio/leaflet)
-
- ### Ejemplo de uso (Aquí más [ejemplos](https://github.com/fer-aguirre/mapas/blob/master/mapaLeaflet.R))
+ * ### Ejemplo de [leaflet](https://github.com/rstudio/leaflet) (Aquí más [ejemplos](https://github.com/fer-aguirre/mapas/blob/master/mapaLeaflet.R))
 
 ```R
 library(leaflet)
@@ -138,7 +128,7 @@ m <- leaflet() %>%
   setView( lat=19.432750647216512, lng=-99.13317863986936, zoom=14) %>%
   # Add layers
   addProviderTiles("Stamen.Toner") %>%
-  # Markers
+  # Add markers
   addMarkers(m, lat=19.435011442107704, lng=-99.13265026035839, popup="<b>Parque República de Guatemala</b>", icon=icon_park) %>%
   addMarkers(m, lat=19.42982058040328, lng=-99.13279050032122, popup="<b>Parque Francisco Primo De Verdad Y Ramos</b>", icon=icon_park) %>%
   addMarkers(m, lat=19.43640005202161, lng=-99.14397464702137, popup="<b>Alameda Central</b>", icon=icon_park) %>%
