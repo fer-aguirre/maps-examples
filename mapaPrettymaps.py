@@ -3,8 +3,7 @@ import matplotlib.font_manager as fm
 from matplotlib import pyplot as plt
 
 
-### square plot with rounded edges
-
+# SQUARE PLOT WITH ROUNDED EDGES
 # Style parameters
 palette = ['#001c5a', '#ffab15']
 background_c = '#e5c6f5'
@@ -74,9 +73,8 @@ plt.savefig('ejemplos/cdmx-square.png')
 
 ###############################################################################
 
-### circle plot
-
-Setup figure
+# CIRCLE PLOT
+# Setup figure
 fig, ax = plt.subplots(figsize = (12, 12), constrained_layout = True)
 
 layers = plot(
@@ -134,7 +132,8 @@ ax.text(
     'CDMX, México',
     color = '#2F3737',
     fontproperties = fm.FontProperties(fname = 'fonts/HashedBrowns-WyJgn.ttf', size = 40),
-),
+)
+
 
 plt.savefig('ejemplos/cdmx-circle.png')
 
