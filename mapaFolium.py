@@ -30,20 +30,10 @@ folium.Marker([19.433655882695284, -99.14372922687433], icon=icon, popup="<b>Par
 
 folium.Marker([19.426977108120735, -99.14572764812497], icon=icon, popup="<b>Parque Pujibet</b>", tooltip=tooltip).add_to(m)
 
-folium.Marker([19.42509245375351, -99.14246706617165], icon=icon, popup="<b>Parque Fray servando Teresa de Mier</b>", tooltip=tooltip).add_to(m)
-
-folium.Marker([19.42429890853207, -99.14001286470138], icon=icon, popup="<b>Parque Gilberto Owen</b>", tooltip=tooltip).add_to(m)
-
-folium.Marker([19.422711806416164, -99.12774185713113], icon=icon, popup="<b>Parque El Indio</b>", tooltip=tooltip).add_to(m)
-
-folium.Marker([19.43504749580566, -99.11170875643528], icon=icon, popup="<b>Parque San Antonio Tomatlan</b>", tooltip=tooltip).add_to(m)
-
-folium.Marker([19.436423469877685, -99.10921966656204], icon=icon, popup="<b>Parque Héroe de Nacozari</b>", tooltip=tooltip).add_to(m)
-
 
 # Save as 'html'
-m.save("ejemplos/leaflet-python.html")
+m.save("ejemplos/folium-python.html")
 # Save as 'png'
 img_data = m._to_png(5)
 img = Image.open(io.BytesIO(img_data))
-img.save('ejemplos/cdmx-folium.png')
+img.save('ejemplos/folium-python.png')
