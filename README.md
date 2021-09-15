@@ -90,7 +90,7 @@ m = folium.Map(location=[19.43274052957381, -99.133221555212], zoom_start=16, ti
 # Add another layer
 folium.TileLayer(tiles='Stamen Toner Labels').add_to(m)
 # Custom icon image
-icon_image = "https://github.com/fer-aguirre/mapas/blob/master/assets/icons/tree.png"
+icon_image = "assets/icons/tree.png"
 icon = CustomIcon(
     icon_image,
     icon_size=(50, 50),
@@ -116,10 +116,11 @@ folium.Marker([19.426977108120735, -99.14572764812497], icon=icon, popup="<b>Par
 
 ```R
 library(leaflet)
+library(here)
 
 # Custom icon
 icon_park <- makeIcon(
-  iconUrl = "https://github.com/fer-aguirre/mapas/blob/master/assets/icons/park.png",
+  iconUrl = "assets/icons/park.png",
   iconWidth = 30, iconHeight = 40,
   iconAnchorX = 0, iconAnchorY = 0
 )
