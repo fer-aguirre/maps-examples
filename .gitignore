@@ -5,3 +5,4 @@ cache
 .Rhistory
 geckodriver.log
 ejemplos/leaflet*
+test.py
