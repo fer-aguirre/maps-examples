@@ -132,7 +132,7 @@ m <- leaflet() %>%
   # Add markers
   addMarkers(m, lat=19.435011442107704, lng=-99.13265026035839, popup="<b>Parque República de Guatemala</b>", icon=icon_park)
   
-  m
+m
 ```
 
 ![Leaflet-R](https://github.com/fer-aguirre/mapas/blob/master/prints/leaflet-r.png)
