@@ -4,5 +4,6 @@ env*
 cache
 .R*
 geckodriver.log
-ejemplos/*.html
-test.py
+prints/*.html
+*.py
+notebooks/.ipynb*
