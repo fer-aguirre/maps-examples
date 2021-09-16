@@ -63,8 +63,10 @@ ax.text(
     fontproperties = fm.FontProperties(fname = 'assets/fonts/HashedBrowns-WyJgn.ttf', size = 40)
 )
 
-
+# Save map as 'png'
 plt.savefig('ejemplos/zocalo.png')
+# Save map as 'svg'
+#plt.savefig('ejemplos/zocalo.svg')
 
 ###############################################################################
 
@@ -131,7 +133,10 @@ ax.text(
     fontproperties = fm.FontProperties(fname = 'assets/fonts/HashedBrowns-WyJgn.ttf', size = 40)
 )
 
+# Save map as 'png'
 plt.savefig('ejemplos/bosque-chapultepec.png')
+# Save map as 'svg'
+#plt.savefig('ejemplos/bosque-chapultepec.png')
 
 ###############################################################################
 
@@ -202,6 +207,9 @@ ax.text(
     fontproperties = fm.FontProperties(fname = 'assets/fonts/HashedBrowns-WyJgn.ttf', size = 40)
 )
 
+# Save map as 'png'
 plt.savefig('ejemplos/kiosco-morisco.png')
+# Save map as 'svg'
+#plt.savefig('ejemplos/kiosco-morisco.svg')
 
 ###############################################################################
