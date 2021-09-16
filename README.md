@@ -3,7 +3,7 @@ Ejemplos de mapas con distintas librerías y lenguajes de programación
 
 ## Mapas en Python
 
-  * ### Ejemplo de [prettymaps](https://github.com/marceloprates/prettymaps) (Aquí más [ejemplos](https://github.com/fer-aguirre/mapas/blob/master/mapaPrettymaps.py))
+  * ### Ejemplo de [prettymaps](https://github.com/marceloprates/prettymaps) (Aquí más [ejemplos](https://github.com/fer-aguirre/mapas/blob/master/notebooks/ejemplosPrettymaps.ipynb))
  
   ```python
  from prettymaps import *
@@ -72,12 +72,12 @@ Ejemplos de mapas con distintas librerías y lenguajes de programación
  )
 ```
  
-  ![Zocalo](https://github.com/fer-aguirre/mapas/blob/master/ejemplos/zocalo.png)
+  ![Zocalo](https://github.com/fer-aguirre/mapas/blob/master/prints/zocalo.png)
   
   ### Galería:
   
-  ![Bosque de Chapultepec](https://github.com/fer-aguirre/mapas/blob/master/ejemplos/bosque-chapultepec.png)
-  ![Kiosco Morisco](https://github.com/fer-aguirre/mapas/blob/master/ejemplos/kiosco-morisco.png)
+  ![Bosque de Chapultepec](https://github.com/fer-aguirre/mapas/blob/master/prints/bosque-chapultepec.png)
+  ![Kiosco Morisco](https://github.com/fer-aguirre/mapas/blob/master/prints/kiosco-morisco.png)
 
 
  * ### Ejemplo de [folium](https://github.com/python-visualization/folium) (Aquí más [ejemplos](https://github.com/fer-aguirre/mapas/blob/master/mapaFolium.py))
@@ -107,7 +107,7 @@ folium.Marker([19.433655882695284, -99.14372922687433], icon=icon, popup="<b>Par
 folium.Marker([19.426977108120735, -99.14572764812497], icon=icon, popup="<b>Parque Pujibet</b>", tooltip=tooltip).add_to(m)
 ```
 
-  ![Floium](https://github.com/fer-aguirre/mapas/blob/master/ejemplos/folium-python.png)
+  ![Floium](https://github.com/fer-aguirre/mapas/blob/master/prints/folium-python.png)
 
 
 ## Mapas en R
@@ -137,7 +137,7 @@ m <- leaflet() %>%
   addMarkers(m, lat=19.426977108120735, lng=-99.14572764812497, popup="<b>Parque Pujibet</b>", icon=icon_park)
 ```
 
-![Leaflet-R](https://github.com/fer-aguirre/mapas/blob/master/ejemplos/leaflet-r.png)
+![Leaflet-R](https://github.com/fer-aguirre/mapas/blob/master/prints/leaflet-r.png)
 
 ## Mapas en Javascript
 
