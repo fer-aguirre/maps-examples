@@ -8,7 +8,7 @@ Ejemplos de mapas con distintas librerías y lenguajes de programación
   ```python
 # Prettymaps
 from prettymaps import *
-# Matplotlib-related
+# Matplotlib
 import matplotlib.font_manager as fm
 import matplotlib.pyplot as plt
 
@@ -81,9 +81,10 @@ ax.text(
   ![Kiosco Morisco](https://github.com/fer-aguirre/mapas/blob/master/prints/kiosco-morisco.png)
 
 
- * ### Ejemplo de [folium](https://github.com/python-visualization/folium) (Aquí más [ejemplos](https://github.com/fer-aguirre/mapas/blob/master/mapaFolium.py))
+ * ### Ejemplo de [folium](https://github.com/python-visualization/folium) (Aquí más [ejemplos](https://github.com/fer-aguirre/mapas/blob/master/notebooks/ejemploFolium.ipynb))
 
 ```python
+# Folium
 import folium
 from folium.features import CustomIcon
 
@@ -91,7 +92,7 @@ m = folium.Map(location=[19.43274052957381, -99.133221555212], zoom_start=16, ti
 # Add another layer
 folium.TileLayer(tiles='Stamen Toner Labels').add_to(m)
 # Custom icon image
-icon_image = "assets/icons/tree.png"
+icon_image = "../assets/icons/tree.png"
 icon = CustomIcon(
     icon_image,
     icon_size=(50, 50),
@@ -102,10 +103,8 @@ icon = CustomIcon(
 tooltip = "¡Haz click!"
 # Add markers
 folium.Marker([19.435011442107704, -99.13265026035839], icon=icon, popup="<b>Parque República de Guatemala</b>", tooltip=tooltip).add_to(m)
-folium.Marker([19.42982058040328, -99.13279050032122], icon=icon, popup="<b>Parque Francisco Primo De Verdad Y Ramos</b>", tooltip=tooltip).add_to(m)
-folium.Marker([19.43640005202161, -99.14397464702137], icon=icon, popup="<b>Alameda Central</b>", tooltip=tooltip).add_to(m)
-folium.Marker([19.433655882695284, -99.14372922687433], icon=icon, popup="<b>Parque Santos Degollado</b>", tooltip=tooltip).add_to(m)
-folium.Marker([19.426977108120735, -99.14572764812497], icon=icon, popup="<b>Parque Pujibet</b>", tooltip=tooltip).add_to(m)
+
+m
 ```
 
   ![Floium](https://github.com/fer-aguirre/mapas/blob/master/prints/folium-python.png)
