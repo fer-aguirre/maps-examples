@@ -3,7 +3,7 @@ Ejemplos de mapas con distintas librerías y lenguajes de programación
 
 ## Mapas en Python
 
-  * ### Ejemplo de [prettymaps](https://github.com/marceloprates/prettymaps) (Aquí más [ejemplos](https://github.com/fer-aguirre/mapas/blob/master/notebooks/ejemplosPrettymaps.ipynb))
+  * ### Ejemplo de [prettymaps](https://github.com/marceloprates/prettymaps) (Aquí más [ejemplos](https://nbviewer.jupyter.org/github/fer-aguirre/mapas/blob/master/notebooks/ejemplosPrettymaps.ipynb))
  
   ```python
 # Prettymaps
@@ -81,7 +81,7 @@ ax.text(
   ![Kiosco Morisco](https://github.com/fer-aguirre/mapas/blob/master/prints/kiosco-morisco.png)
 
 
- * ### Ejemplo de [folium](https://github.com/python-visualization/folium) (Aquí más [ejemplos](https://github.com/fer-aguirre/mapas/blob/master/notebooks/ejemploFolium.ipynb))
+ * ### Ejemplo de [folium](https://github.com/python-visualization/folium) (Aquí más [ejemplos](https://nbviewer.jupyter.org/github/fer-aguirre/mapas/blob/master/notebooks/ejemploFolium.ipynb))
 
 ```python
 # Folium
