@@ -1,0 +1,101 @@
+ID,Colonia,Alcaldía,Latitud,Longitud,Puntos_de_acceso,Programa
+Viveros De Coyoacán,DEL CARMEN,COYOACÁN,19.3537,-99.17177,1,Sitios_Publicos
+Villa,VILLA GUSTAVO A MADERO,GUSTAVO A. MADERO,19.4871,-99.11429,1,Sitios_Publicos
+Toxicológico Xochimilco,TIERRA NUEVA,XOCHIMILCO,19.26485,-99.11495,1,Sitios_Publicos
+Toxicológico Venustiano Carranza,CUCHILLA PANTITLAN 2156,VENUSTIANO CARRANZA,19.42128,-99.06899,1,Sitios_Publicos
+Ticomán,LA PURISIMA TICOMAN,GUSTAVO A. MADERO,19.509,-99.1326,4,Sitios_Publicos
+San Juan De Aragón,SAN JUAN DE ARAGON I SECCION 2438,GUSTAVO A. MADERO,19.45719,-99.09314,1,Sitios_Publicos
+Rubén Leñero,SANTO TOMAS,MIGUEL HIDALGO,19.45135,-99.1694,2,Sitios_Publicos
+Plaza Principal San Antonio Tecomitl,CRUZTITLA,MILPA ALTA,19.21748,-98.99382,6,Sitios_Publicos
+Plaza Garibaldi,CENTRO,CUAUHTÉMOC,19.4404,-99.13921,4,Sitios_Publicos
+Plaza De La Igualdad,LA ASUNCION,TLÁHUAC,19.24327,-98.9954,2,Sitios_Publicos
+Plaza De La Constitución (El Zócalo),CENTRO,CUAUHTÉMOC,19.43128,-99.13242,36,Sitios_Publicos
+Plaza Cívica Valentín Campa,SANTA MARIA AZTAHUACAN 2506,IZTAPALAPA,19.35466,-99.03208,1,Sitios_Publicos
+Plaza Cívica San Pedro Atocpan,PANCHIMALCO,MILPA ALTA,19.20126,-99.04998,1,Sitios_Publicos
+Peralvillo,SAN SIMON TOLNAHUAC,CUAUHTÉMOC,19.45963,-99.14132,1,Sitios_Publicos
+Parque México,HIPODROMO,CUAUHTÉMOC,19.41192,-99.16941,19,Sitios_Publicos
+Parque Loreto Y Peña Pobre,PEÑA POBRE,TLALPAN,19.29638,-99.18368,4,Sitios_Publicos
+Parque Lira,OBSERVATORIO,MIGUEL HIDALGO,19.40683,-99.19006,2,Sitios_Publicos
+Parque España,CONDESA,CUAUHTÉMOC,19.41526,-99.17277,8,Sitios_Publicos
+Parque Ecológico Huayamilpas,AJUSCO HUAYAMILPAS,COYOACÁN,19.32419,-99.15047,1,Sitios_Publicos
+Parque Cultural Infantil (Patolli San Miguel Teotongo),SAN MIGUEL TEOTONGO,IZTAPALAPA,19.3442,-98.9895,1,Sitios_Publicos
+Parque Cultural Infantil (Patolli Canal Nacional),LEYES DE REFORMA 3RA SECCION,IZTAPALAPA,19.37708,-99.05979,2,Sitios_Publicos
+Parque Cultural Infantil (Patolli Cabeza De Juárez),LEYES DE REFORMA 3RA SECCION,IZTAPALAPA,19.37741,-99.06014,4,Sitios_Publicos
+Paradero Auditorio Nacional,BOSQUE DE CHAPULTEPEC I,MIGUEL HIDALGO,19.42469,-99.19133,4,Sitios_Publicos
+Moctezuma,MOCTEZUMA 2DA SECCION,VENUSTIANO CARRANZA,19.43263,-99.09801,2,Sitios_Publicos
+Médico Infantil Inguarán,FELIPE ANGELES,VENUSTIANO CARRANZA,19.45211,-99.113,1,Sitios_Publicos
+Medico Infantil De Tláhuac,LA HABANA,TLÁHUAC,19.26583,-98.99903,3,Sitios_Publicos
+Medico Infantil Cedillo,FRANCISCO VILLA,AZCAPOTZALCO,19.49788,-99.20393,3,Sitios_Publicos
+Magdalena Contreras,SAN JERONIMO LIDICE,LA MAGDALENA CONTRERAS,19.31974,-99.23901,1,Sitios_Publicos
+Legaria,MEXICO NUEVO,MIGUEL HIDALGO,19.45096,-99.20266,1,Sitios_Publicos
+Kiosco Morisco,SANTA MARIA LA RIBERA,CUAUHTÉMOC,19.44963,-99.15675,4,Sitios_Publicos
+Instituto De Formación Profesional Pb,DEL GAS 2164,AZCAPOTZALCO,19.47048,-99.16026,1,Sitios_Publicos
+Instituto De Formación Profesional Edificio Anexo Pb,DEL GAS 2164,AZCAPOTZALCO,19.47048,-99.16026,2,Sitios_Publicos
+Instituto De Formación Profesional Edificio Anexo 4O Piso,DEL GAS 2164,AZCAPOTZALCO,19.47048,-99.16026,3,Sitios_Publicos
+Instituto De Formación Profesional Edificio Anexo 3Er Piso,DEL GAS 2164,AZCAPOTZALCO,19.47048,-99.16026,4,Sitios_Publicos
+Instituto De Formación Profesional Edificio Anexo 2O Piso,DEL GAS 2164,AZCAPOTZALCO,19.47048,-99.1605,4,Sitios_Publicos
+Indios Verdes Faro,SANTA ISABEL TOLA,GUSTAVO A. MADERO,19.50362,-99.11336,2,Sitios_Publicos
+Hospital Xochimilco,SAN LUCAS XOCHIMANCA 2447,XOCHIMILCO,19.25413,-99.10551,1,Sitios_Publicos
+Hospital Pediátrico Tacubaya,TACUBAYA,MIGUEL HIDALGO,19.40257,-99.19082,1,Sitios_Publicos
+Hospital Pediátrico Iztapalapa,GRANJAS DE SAN ANTONIO,IZTAPALAPA,19.35669,-99.10765,1,Sitios_Publicos
+Hospital Pediátrico Iztacalco,SANTA ANITA 2493,IZTACALCO,19.40453,-99.12015,1,Sitios_Publicos
+Hospital Pediátrico Coyoacan,BARRIO SANTA CATARINA,COYOACÁN,19.34556,-99.16788,6,Sitios_Publicos
+Hospital Milpa Alta,SANTA CRUZ,MILPA ALTA,19.20077,-99.01186,2,Sitios_Publicos
+Hospital Iztapalapa,SANTA MARIA AZTAHUACAN 2504,IZTAPALAPA,19.34316,-99.02725,2,Sitios_Publicos
+Hospital Gregorio Salas,CENTRO,CUAUHTÉMOC,19.43772,-99.12945,2,Sitios_Publicos
+Hospital General Xoco,GENERAL PEDRO MARIA ANAYA,BENITO JUÁREZ,19.36003,-99.16239,2,Sitios_Publicos
+Glorieta De Los Insurgentes,JUAREZ,CUAUHTÉMOC,19.42414,-99.16383,8,Sitios_Publicos
+Foro Cultural Contreras,LA CONCEPCION,LA MAGDALENA CONTRERAS,19.30473,-99.23642,2,Sitios_Publicos
+Faro Milpa Alta,TENANTITLA,MILPA ALTA,19.22157,-98.99532,4,Sitios_Publicos
+Faro De Oriente,SANTA MARTHA ACATITLA NORTE,IZTAPALAPA,19.36955,-99.01004,1,Sitios_Publicos
+Explanada Teatro De La Juventud,TOLTECA,ÁLVARO OBREGÓN,19.3906,-99.19525,4,Sitios_Publicos
+Explanada San Salvador Cuauhtenco,SAN SALVADOR CUAUHTENCO,MILPA ALTA,19.19249,-99.09023,1,Sitios_Publicos
+Enrique Cabrera,LOMAS DE TARANGO 2290,ÁLVARO OBREGÓN,19.36083,-99.22542,1,Sitios_Publicos
+Deportivo Los Galeana,SAN JUAN DE ARAGON VII SECCION,GUSTAVO A. MADERO,19.47823,-99.0771,1,Sitios_Publicos
+Cuautepec,ZONA ESCOLAR ORIENTE,GUSTAVO A. MADERO,19.53974,-99.14251,1,Sitios_Publicos
+Corredor Tamaulipas,HIPODROMO,CUAUHTÉMOC,19.41015,-99.17507,1,Sitios_Publicos
+Corredor Reforma (Museo Rufino Tamayo),BOSQUE DE CHAPULTEPEC I,MIGUEL HIDALGO,19.42573,-99.1839,1,Sitios_Publicos
+Corredor Reforma (Museo De Arte Moderno),BOSQUE DE CHAPULTEPEC I,MIGUEL HIDALGO,19.42228,-99.17951,4,Sitios_Publicos
+Corredor Michoacán,CONDESA,CUAUHTÉMOC,19.41162,-99.17404,1,Sitios_Publicos
+Corredor Mazatlán,CONDESA,CUAUHTÉMOC,19.41433,-99.1772,2,Sitios_Publicos
+Corredor Masaryk,POLANCO IV SECCION,MIGUEL HIDALGO,19.43197,-99.19794,39,Sitios_Publicos
+Corredor Cultural Tláhuac,SELENE 2546,TLÁHUAC,19.29343,-98.99838,1,Sitios_Publicos
+Corredor Amsterdam,HIPODROMO,CUAUHTÉMOC,19.41084,-99.17175,1,Sitios_Publicos
+Centro Regulador De Urgencias,AERONAUTICA MILITAR,VENUSTIANO CARRANZA,19.42418,-99.1161,2,Sitios_Publicos
+Centro Familiar De Santa Catarina,MIGUEL DE LA MADRID HURTADO,IZTAPALAPA,19.34224,-99.00276,1,Sitios_Publicos
+Centro Deportivo Xochimilco,SAN LUCAS XOCHIMANCA 2447,XOCHIMILCO,19.25496,-99.1072,3,Sitios_Publicos
+Centro Cultural Faro Tláhuac,MIGUEL HIDALGO 2330,TLÁHUAC,19.28747,-99.04648,10,Sitios_Publicos
+Centro Coyoacán Pb (Corredor Principal),DEL VALLE SUR,BENITO JUÁREZ,19.36605,-99.17285,5,Sitios_Publicos
+Centro Coyoacán 2O Piso (Recepción),DEL VALLE SUR,BENITO JUÁREZ,19.36605,-99.17285,2,Sitios_Publicos
+Cendi Rubén Leñero,ANAHUAC,MIGUEL HIDALGO,19.44732,-99.17753,1,Sitios_Publicos
+Casa Popular De La Juventud,SAN JERONIMO LIDICE,LA MAGDALENA CONTRERAS,19.32216,-99.22128,1,Sitios_Publicos
+Casa De La Cultura Jesús Reyes Heroles,BARRIO SANTA CATARINA,COYOACÁN,19.34916,-99.17109,5,Sitios_Publicos
+Campos Elíseos,POLANCO IV SECCION,MIGUEL HIDALGO,19.42782,-99.19387,12,Sitios_Publicos
+Búnker Pb,DOCTORES,CUAUHTÉMOC,19.42395,-99.14786,1,Sitios_Publicos
+Búnker 5O Piso,DOCTORES,CUAUHTÉMOC,19.42481,-99.14703,1,Sitios_Publicos
+Búnker  Área De Comunicación (Prensa),DOCTORES,CUAUHTÉMOC,19.42429,-99.14677,1,Sitios_Publicos
+Bosque De Tlalpan,FUENTES BROTANTES 2202,TLALPAN,19.29129,-99.1982,4,Sitios_Publicos
+Bosque De Chapultepec,SAN MIGUEL CHAPULTEPEC,MIGUEL HIDALGO,19.41949,-99.19056,39,Sitios_Publicos
+Bosque De Aragón,SAN JUAN DE ARAGON IV SECCION 2440,GUSTAVO A. MADERO,19.46324,-99.06372,4,Sitios_Publicos
+Belisario Domínguez,PANTEON DE SAN LORENZO,IZTAPALAPA,19.30672,-99.06595,11,Sitios_Publicos
+Balbuena,AERONAUTICA MILITAR,VENUSTIANO CARRANZA,19.42407,-99.11528,6,Sitios_Publicos
+Azcapotzalco,CENTRO DE AZCAPOTZALCO,AZCAPOTZALCO,19.48449,-99.18779,1,Sitios_Publicos
+Alcaldía Xochimilco,SAN PEDRO,XOCHIMILCO,19.25738,-99.10911,2,Sitios_Publicos
+Alcaldía Venustiano Carranza,JARDIN BALBUENA 2225,VENUSTIANO CARRANZA,19.41918,-99.11355,1,Sitios_Publicos
+Alcaldía Tlalpan,TLALPAN CENTRO,TLALPAN,19.28934,-99.16949,9,Sitios_Publicos
+Alcaldía Tláhuac,LA ASUNCION,TLÁHUAC,19.27012,-99.00507,2,Sitios_Publicos
+Alcaldía Milpa Alta,LOS ANGELES,MILPA ALTA,19.19195,-99.02343,1,Sitios_Publicos
+Alcaldía Miguel Hidalgo,ESCANDON,MIGUEL HIDALGO,19.39781,-99.18217,1,Sitios_Publicos
+Alcaldía La Magdalena Contreras,BARRANCA SECA,LA MAGDALENA CONTRERAS,19.30485,-99.24151,3,Sitios_Publicos
+Alcaldía Iztapalapa,SAN LUCAS,IZTAPALAPA,19.35929,-99.09204,5,Sitios_Publicos
+Alcaldía Iztacalco,GABRIEL RAMOS MILLAN SECCION BRAMADERO,IZTACALCO,19.3957,-99.09715,1,Sitios_Publicos
+Alcaldía Gustavo A. Madero,VILLA GUSTAVO A MADERO,GUSTAVO A. MADERO,19.48284,-99.11441,5,Sitios_Publicos
+Alcaldía Cuauhtémoc,BUENAVISTA,CUAUHTÉMOC,19.44146,-99.15239,3,Sitios_Publicos
+Alcaldía Cuajimalpa,CUAJIMALPA,CUAJIMALPA DE MORELOS,19.35782,-99.30167,5,Sitios_Publicos
+Alcaldía Coyoacán,VILLA COYOACAN,COYOACÁN,19.35037,-99.16194,8,Sitios_Publicos
+Alcaldía Benito Juárez,DEL CARMEN,COYOACÁN,19.35018,-99.16442,1,Sitios_Publicos
+Alcaldía Azcapotzalco,CENTRO DE AZCAPOTZALCO,AZCAPOTZALCO,19.4827,-99.1837,4,Sitios_Publicos
+Alcaldía Alvaro Obregón,TOLTECA,ÁLVARO OBREGÓN,19.38944,-99.19566,3,Sitios_Publicos
+Alameda Central,CENTRO,CUAUHTÉMOC,19.43618,-99.14414,15,Sitios_Publicos
+"H. G. Cuautepec ""La Pastora""",LA PASTORA 2257,GUSTAVO A. MADERO,19.52438312,-99.1395755,1,Sitios_Publicos
+U. H. Pensador Mexicano,GUERRERO,CUAUHTÉMOC,19.437948,-99.14082,2,Sitios_Publicos
