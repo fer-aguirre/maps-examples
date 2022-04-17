@@ -1,14 +1,128 @@
-# mapas
-Ejemplos de mapas con distintas librerías y lenguajes de programación
+# Maps examples 🗺
 
-## Mapas en Python
+Collection of maps examples to explore free Wi-Fi hotspots locations in Mexico City. All the data and data dictionaries were download from [here](https://datos.cdmx.gob.mx/group/conectividad)
 
-  * ### Ejemplo de [prettymaps](https://github.com/marceloprates/prettymaps) (Aquí más [ejemplos](https://nbviewer.jupyter.org/github/fer-aguirre/mapas/blob/master/notebooks/ejemplosPrettymaps.ipynb))
+## Contents
+
+- [Python](#maps-on-python)
+  - [folium]()
+  - [prettymaps]()
+- [R](#maps-on-r)
+  - [leaflet]()
+- [JavaScript](#maps-on-javascript)
+  - [react-leaflet]()
+
+---
+
+## Maps on Python
+
+
+### Example with [folium](https://github.com/python-visualization/folium)
+
+```python3
+# Folium
+import folium
+import pandas as pd
+from folium import plugins
+from folium.features import CustomIcon, FeatureGroup
+
+# Load data
+wifi_pilares = pd.read_csv('../data/wifi_gratuito_en_pilares.csv', encoding = 'latin-1')
+wifi_sitiospublicos = pd.read_csv('../data/wifi_gratuito_en_sitios_publicos.csv', encoding = 'latin-1')
+
+m = folium.Map(location=[19.43274052957381, -99.133221555212], zoom_start=10, tiles=None)
+
+# Add layer 
+folium.TileLayer(tiles="CartoDB Positron", name="Free Wi-Fi Hotspots in Mexico City", attr= '''
+            &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 
+            contributors &copy; <a href="https://carto.com/attributions">CARTO</a>''').add_to(m)
+
+# Add a group
+pilares = FeatureGroup(name="Pilares")
+pilares.add_to(m)
+sitiospublicos = FeatureGroup(name="Sitios Públicos")
+sitiospublicos.add_to(m)
+
+# Add the option to switch layers
+folium.LayerControl('topright', collapsed= False).add_to(m)
+
+# Add fullscreen option
+plugins.Fullscreen(
+    position="topright",
+    title="Fullscreen",
+    title_cancel="Exit fullscreen",
+    force_separate_button=True,
+).add_to(m)
+
+# Iter a dataframe rows
+for i, r in wifi_pilares.iterrows():
+    # Custom icon image
+    icon = CustomIcon('../assets/icons/wifi-pilares.png', 
+    icon_size=(50, 50),
+    icon_anchor=(20, 10),
+    popup_anchor=(-2, -15))
+    # Add markers
+    folium.Marker([r['Latitud'], r['Longitud']],
+    popup = folium.Popup('''
+                        <div class="container">
+                            Puntos de acceso: {}
+                        </div>
+                        
+                        <style type='text/css'>
+                        .container {{
+                            width: 150px;
+                            font-family: Verdana, sans-serif;
+                            text-align:justify;
+                            font-size:12px;
+                            font-weight: 600; 
+                            border-radius: 5px;
+                            padding: 10px;
+                        }}
+                        '''.format(r["Puntos_de_acceso"])),
+    tooltip = r['Colonia'],
+    icon = icon
+    ).add_to(pilares)
+
+# Iter a dataframe rows
+for i, r in wifi_sitiospublicos.iterrows():
+    # Custom icon image
+    icon = CustomIcon('../assets/icons/wifi-sitiospublicos.png', 
+    icon_size=(50, 50),
+    icon_anchor=(20, 10),
+    popup_anchor=(-2, -15))
+    # Add markers
+    folium.Marker([r['Latitud'], r['Longitud']],
+    popup = folium.Popup('''
+                        <div class="container">
+                            Puntos de acceso: {}
+                        </div>
+                        
+                        <style type='text/css'>
+                        .container {{
+                            width: 150px;
+                            font-family: Verdana, sans-serif;
+                            text-align:justify;
+                            font-size:12px;
+                            font-weight: 600; 
+                            border-radius: 5px;
+                            padding: 10px;
+                        }}
+                        '''.format(r["Puntos_de_acceso"])),
+    tooltip = r['Colonia'],
+    icon = icon
+    ).add_to(sitiospublicos)
+
+# Show map
+m
+```
+
+![Folium](https://github.com/fer-aguirre/maps-examples/blob/main/prints/python-folium.png)
+
+
+### Example of [prettymaps](https://github.com/marceloprates/prettymaps)
  
-  ```python
-# Prettymaps
+  ```python3
 from prettymaps import *
-# Matplotlib
 import matplotlib.font_manager as fm
 import matplotlib.pyplot as plt
 
@@ -73,75 +187,28 @@ ax.text(
 )
 ```
  
-  ![Zocalo](https://github.com/fer-aguirre/mapas/blob/master/prints/zocalo.png)
+![Zocalo](https://github.com/fer-aguirre/maps-examples/blob/main/prints/zocalo.png)
   
-  ### Galería:
+### Gallery:
   
-  ![Bosque de Chapultepec](https://github.com/fer-aguirre/mapas/blob/master/prints/bosque-chapultepec.png)
-  ![Kiosco Morisco](https://github.com/fer-aguirre/mapas/blob/master/prints/kiosco-morisco.png)
+![Bosque de Chapultepec](https://github.com/fer-aguirre/maps-examples/blob/main/prints/bosque-chapultepec.png)
+![Kiosco Morisco](https://github.com/fer-aguirre/maps-examples/blob/main/prints/kiosco-morisco.png)
 
+---
 
- * ### Ejemplo de [folium](https://github.com/python-visualization/folium) (Aquí más [ejemplos](https://nbviewer.jupyter.org/github/fer-aguirre/mapas/blob/master/notebooks/ejemploFolium.ipynb))
+## Maps on R
 
-```python
-# Folium
-import folium
-from folium.features import CustomIcon
-
-m = folium.Map(location=[19.43274052957381, -99.133221555212], zoom_start=16, tiles="Stamen Watercolor", attr= '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>')
-# Add another layer
-folium.TileLayer(tiles='Stamen Toner Labels').add_to(m)
-# Custom icon image
-icon_image = "../assets/icons/tree.png"
-icon = CustomIcon(
-    icon_image,
-    icon_size=(50, 50),
-    icon_anchor=(20, 10),
-    popup_anchor=(-3, -76),
-)
-# Custom tooltip message
-tooltip = "¡Haz click!"
-# Add markers
-folium.Marker([19.435011442107704, -99.13265026035839], icon=icon, popup="<b>Parque República de Guatemala</b>", tooltip=tooltip).add_to(m)
-
-m
-```
-
-  ![Floium](https://github.com/fer-aguirre/mapas/blob/master/prints/folium-python.png)
-
-
-## Mapas en R
-
- * ### Ejemplo de [leaflet](https://github.com/rstudio/leaflet) (Aquí más [ejemplos](https://github.com/fer-aguirre/mapas/blob/master/mapaLeaflet.R))
+### Example with [leaflet](https://github.com/rstudio/leaflet)
 
 ```R
-library(leaflet)
-library(here)
-
-# Custom icon
-icon_park <- makeIcon(
-  iconUrl = "assets/icons/park.png",
-  iconWidth = 30, iconHeight = 40,
-  iconAnchorX = 0, iconAnchorY = 0
-)
-
-m <- leaflet() %>% 
-  setView( lat=19.432750647216512, lng=-99.13317863986936, zoom=14) %>%
-  # Add layers
-  addProviderTiles("Stamen.Toner") %>%
-  # Add markers
-  addMarkers(m, lat=19.435011442107704, lng=-99.13265026035839, popup="<b>Parque República de Guatemala</b>", icon=icon_park)
-  
-m
 ```
 
-![Leaflet-R](https://github.com/fer-aguirre/mapas/blob/master/prints/leaflet-r.png)
+---
 
-## Mapas en Javascript
+## Maps on Javascript
 
-  * ### [leaflet](https://github.com/Leaflet/Leaflet)
+### Example with [react-leaflet](https://github.com/PaulLeCam/react-leaflet)
 
-## Mapas en React
-
-  * ### [leaflet](https://github.com/PaulLeCam/react-leaflet)
+```js
+```
 
