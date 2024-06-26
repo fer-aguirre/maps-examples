@@ -1,23 +1,15 @@
-# Maps examples 🗺
+# Maps examples 🌎
 
-Collection of maps examples to explore free Wi-Fi hotspots locations in Mexico City. All the data and data dictionaries were download from [here](https://datos.cdmx.gob.mx/group/conectividad)
+Maps examples using folium and prettymaps modules in Python.
 
 ## Contents
 
-- [Python](#maps-on-python)
-  - [folium]()
-  - [prettymaps]()
-- [R](#maps-on-r)
-  - [leaflet]()
-- [JavaScript](#maps-on-javascript)
-  - [react-leaflet]()
+- [folium](#folium)
+- [prettymaps](#prettymaps)
 
 ---
 
-## Maps on Python
-
-
-### Example with [folium](https://github.com/python-visualization/folium)
+## [folium](https://github.com/python-visualization/folium)
 
 ```python3
 # Folium
@@ -118,8 +110,10 @@ m
 
 ![Folium](https://github.com/fer-aguirre/maps-examples/blob/main/prints/python-folium.png)
 
+The data were download from [here](https://datos.cdmx.gob.mx/group/conectividad)
 
-### Example of [prettymaps](https://github.com/marceloprates/prettymaps)
+
+## [prettymaps](https://github.com/marceloprates/prettymaps)
  
   ```python3
 from prettymaps import *
@@ -193,22 +187,4 @@ ax.text(
   
 ![Bosque de Chapultepec](https://github.com/fer-aguirre/maps-examples/blob/main/prints/bosque-chapultepec.png)
 ![Kiosco Morisco](https://github.com/fer-aguirre/maps-examples/blob/main/prints/kiosco-morisco.png)
-
----
-
-## Maps on R
-
-### Example with [leaflet](https://github.com/rstudio/leaflet)
-
-```R
-```
-
----
-
-## Maps on Javascript
-
-### Example with [react-leaflet](https://github.com/PaulLeCam/react-leaflet)
-
-```js
-```
 
